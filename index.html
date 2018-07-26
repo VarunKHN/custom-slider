@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>vslider</title>
+  	<link rel="stylesheet" href="_resource/_css/vsliderStyle.css">
+    <script type="text/javascript" language="javascript" src="_resource/_js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="_resource/_js/vslider.js"></script>
+    <script type="text/javascript" language="javascript">
+    	$(document).ready(function(){
+			$('#defaultPreloader').show();	// Preloader
+			$('.navigationButtons').hide();
+			$('#buttonNavigation').hide();
+		});
+		
+		$(window).load(function(){
+			$('.navigationButtons').fadeIn(1000);
+			$('#buttonNavigation').fadeIn(1000);
+			$("#vSlider").vSlider({
+				transitionTime : 1000, // in second
+				timeBetweenSlides : 2500 // in seconds
+			});
+		});
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="vSlider">
+        	<div id="defaultPreloader">
+               	<img src="_resource/_img/uploadPreloader.gif" id="uploadPreloaderImg"/>
+            </div>
+
+
+            <ul class="slider">
+              <li><img src="_resource/_img/slide-1.jpg" /></li>
+              <li><img src="_resource/_img/slide-2.jpg" /></li>
+              <li><img src="_resource/_img/slide-3.jpg" /></li>
+              <li><img src="_resource/_img/slide-4.jpg" /></li>
+              <li><img src="_resource/_img/slide-5.jpg" /></li>
+            </ul>
+        </div>    
+        
+        <button id="previous" class="navigationButtons"><< previous</button>
+        <ul id="buttonNavigations"></ul>
+        <button id="next" class="navigationButtons">>> next</button>
+        <input type="hidden" name="transitionTime" id="transitionTime" value=""/>
+        <input type="hidden" name="transitionBetweenSlides" id="transitionBetweenSlides" value=""/>
+    </div>
+
+</body>
+</html>

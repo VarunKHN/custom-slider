@@ -1,0 +1,15 @@
+/* Jquery Slider Styles */
+body{background-image:url(../_img/slider_bg.jpg); background-repeat:repeat;}
+.wrapper {width: 840px; margin: 0 auto; padding-top: 50px;}
+.slider { width: 800px; /* Update to your slider width */ height: 600px; /* Update to your slider height */ position: relative; overflow: hidden;}
+.slider li {display: none; position: absolute; top: 0; left: 0;}
+#previous{float:left; position:relative;}
+#next{float:right; position:relative;}
+#buttonNavigations{position:absolute; background-position:bottom; z-index:9999;	margin-left:325px; list-style-type:none; width:auto; position:relative;}
+.ahrefButtons{float:left; height:15px; width:15px; margin-left:3px; background-color:#000; cursor:pointer;}
+.ahrefButtons a{float:left; height:15px; width:15px;}
+.ahrefButtons a:hover{background-color:#963;}
+.liactive{background-color:#999 !important;}
+#vSlider{position:relative; -webkit-box-shadow: 0 0 5px grey; box-shadow: 0 0 5px grey;}
+#defaultPreloader{position:absolute; left:46%; top:46%; display:none;}
+button{background-color:black; color:#CCC; font-size:12px; font-weight:bold; cursor:pointer;}
